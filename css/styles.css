@@ -583,6 +583,10 @@ footer {
         overflow-y: auto;
     }
 
+    .nav-links.nav-active {
+        right: 0;
+    }
+
     .nav-links li {
         width: 100%;
         min-width: 0;
