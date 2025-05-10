@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const header = document.querySelector('header');
     const contactForm = document.querySelector('.order-form');
+    const closeMenuBtn = document.querySelector('.close-menu');
 
     if (!burger || !navLinks) return;
 
@@ -166,5 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 input.classList.toggle('valid', !!input.value);
             });
         });
+    }
+
+    // Botão de fechar menu lateral
+    if (closeMenuBtn) {
+        closeMenuBtn.addEventListener('click', closeMenu);
     }
 }); 
