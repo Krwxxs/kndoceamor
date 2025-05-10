@@ -680,6 +680,26 @@ footer {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         letter-spacing: 1px;
     }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        background: transparent;
+        border: none;
+        font-size: 2.2rem;
+        color: var(--white);
+        cursor: pointer;
+        z-index: 1001;
+        padding: 0.2rem 0.7rem;
+        line-height: 1;
+        border-radius: 50%;
+        transition: background 0.2s;
+    }
+    .close-menu:hover {
+        background: rgba(255,255,255,0.08);
+    }
 }
 
 /* Animação para o menu mobile */
