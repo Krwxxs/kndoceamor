@@ -536,17 +536,18 @@ footer {
         padding: 1.5rem 2rem;
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     .logo {
-        margin: 0 auto;
+        margin: 0;
         position: relative;
         z-index: 1;
         display: flex;
         align-items: center;
         gap: 1rem;
+        justify-content: flex-start;
     }
 
     .logo-img {
@@ -564,6 +565,8 @@ footer {
         border-radius: 12px;
         box-shadow: none;
         z-index: 2;
+        left: auto;
+        margin-left: auto;
     }
 
     .nav-links {
