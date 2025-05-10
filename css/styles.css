@@ -489,17 +489,15 @@ footer {
 
 /* Menu Mobile */
 .burger {
-    display: none;
-    cursor: pointer;
-    z-index: 1000;
-    padding: 10px;
+    display: block;
+    position: static;
     background: transparent;
-    border-radius: 50%;
-    transition: var(--transition);
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: none;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .burger:hover {
