@@ -605,17 +605,17 @@ footer {
         width: 100%;
         padding: 1.2rem 1.5rem;
         font-size: 1.1rem;
-        background: rgba(255,255,255,0.07);
+        background: transparent;
         border-radius: 16px;
         margin: 0;
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: none;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         color: var(--white);
         font-weight: 500;
         letter-spacing: 0.5px;
         position: relative;
         overflow: hidden;
-        backdrop-filter: blur(4px);
+        backdrop-filter: none;
         gap: 0.8rem;
         justify-content: flex-start;
     }
@@ -630,10 +630,10 @@ footer {
     }
 
     .nav-links a:hover, .nav-links .social-nav a:hover {
-        background: var(--primary);
+        background: rgba(255,255,255,0.07);
         color: var(--white);
-        border-color: var(--primary);
-        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.15);
+        border: none;
+        box-shadow: none;
         transform: translateX(8px);
     }
 
@@ -653,15 +653,15 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: -2rem auto 2rem auto;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(8px);
-        width: 90%;
-        max-width: 280px;
+        margin: 2rem auto;
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        width: 100%;
+        max-width: none;
     }
 
     .side-logo-img {
@@ -784,7 +784,7 @@ footer {
 /* Exemplo de uso: adicione <div class="section-separator"></div> entre as seções no HTML */
 
 .side-logo {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
