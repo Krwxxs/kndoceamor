@@ -485,6 +485,10 @@ footer {
     background: transparent;
     border-radius: 50%;
     transition: var(--transition);
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
 }
 
 .burger:hover {
@@ -517,20 +521,36 @@ footer {
 
 /* Menu Mobile Links */
 @media (max-width: 768px) {
+    nav {
+        padding: 1.5rem 2rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+
     .burger {
         display: block;
-        position: fixed;
-        top: 1.5rem;
-        right: 1.5rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
         background: transparent;
         padding: 12px;
         border-radius: 12px;
         box-shadow: none;
+        z-index: 2;
     }
 
     .burger:hover {
         background: transparent;
-        transform: scale(1.05);
+        transform: translateY(-50%) scale(1.05);
     }
 
     .burger div {
