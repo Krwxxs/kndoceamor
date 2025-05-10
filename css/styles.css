@@ -262,6 +262,17 @@ nav {
     color: var(--white);
     opacity: 0.9;
     font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: block;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Sobre Section */
@@ -537,7 +548,7 @@ footer {
 
     .burger {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 50%;
         right: 2rem;
         transform: translateY(-50%);
@@ -577,12 +588,6 @@ footer {
         z-index: 999;
         padding: 6rem 1.5rem 2rem 1.5rem;
         overflow-y: auto;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
-    }
-
-    .nav-links::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
     }
 
     .nav-links.nav-active {
@@ -595,46 +600,11 @@ footer {
         transform: translateX(50px);
         transition: all 0.3s ease;
         width: 100%;
-        min-width: 0;
     }
 
     .nav-links.nav-active li {
         opacity: 1;
         transform: translateX(0);
-    }
-
-    .side-logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: -2rem auto 2rem auto;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(8px);
-        width: 90%;
-        max-width: 280px;
-    }
-
-    .side-logo-img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        border: 3px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
-    }
-
-    .side-logo-title {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: var(--white);
-        margin-top: 1.2rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        letter-spacing: 1px;
     }
 
     .nav-links a {
@@ -648,25 +618,6 @@ footer {
         margin: 0;
         border: 1px solid rgba(255, 255, 255, 0.05);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        color: var(--white);
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        position: relative;
-        overflow: hidden;
-        backdrop-filter: blur(4px);
-    }
-
-    .nav-links a::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, var(--primary), #ff5252);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: -1;
     }
 
     .nav-links a:hover {
@@ -674,10 +625,6 @@ footer {
         border-color: var(--primary);
         box-shadow: 0 4px 20px rgba(255, 107, 107, 0.15);
         background: transparent;
-    }
-
-    .nav-links a:hover::after {
-        opacity: 1;
     }
 
     .nav-links a i {
@@ -717,13 +664,6 @@ footer {
         font-weight: 500;
         letter-spacing: 0.5px;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        backdrop-filter: blur(4px);
-    }
-
-    .social-nav a i {
-        font-size: 1.4rem;
-        color: var(--primary);
-        transition: all 0.3s ease;
     }
 
     .social-nav a:hover {
@@ -733,20 +673,16 @@ footer {
         box-shadow: 0 4px 20px rgba(255, 107, 107, 0.15);
     }
 
+    .social-nav a i {
+        font-size: 1.4rem;
+        color: var(--primary);
+        transition: all 0.3s ease;
+    }
+
     .social-nav a:hover i {
         transform: scale(1.1);
         color: var(--white);
     }
-
-    /* Animação de entrada para os itens do menu */
-    .nav-links.nav-active li:nth-child(1) { transition-delay: 0.1s; }
-    .nav-links.nav-active li:nth-child(2) { transition-delay: 0.15s; }
-    .nav-links.nav-active li:nth-child(3) { transition-delay: 0.2s; }
-    .nav-links.nav-active li:nth-child(4) { transition-delay: 0.25s; }
-    .nav-links.nav-active li:nth-child(5) { transition-delay: 0.3s; }
-    .nav-links.nav-active li:nth-child(6) { transition-delay: 0.35s; }
-    .nav-links.nav-active li:nth-child(7) { transition-delay: 0.4s; }
-    .nav-links.nav-active li:nth-child(8) { transition-delay: 0.45s; }
 }
 
 /* Animação para o menu mobile */
