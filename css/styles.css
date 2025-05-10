@@ -834,4 +834,57 @@ footer {
         display: flex;
         margin: 2rem auto;
     }
+}
+
+/* Desktop: esconder close-menu e side-logo, restaurar layout horizontal */
+@media (min-width: 769px) {
+    .close-menu {
+        display: none !important;
+    }
+    .side-logo {
+        display: none !important;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem 3rem 1.5rem 2rem;
+    }
+    .logo {
+        margin-right: 4.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        justify-content: flex-start;
+    }
+    .logo-img {
+        margin-left: 0;
+        margin-right: 0.7rem;
+        width: 40px;
+        height: 40px;
+    }
+    .nav-links {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 1.5rem;
+        align-items: center;
+        transition: none;
+        z-index: auto;
+    }
+    .nav-links li {
+        width: auto;
+        min-width: 0;
+        opacity: 1;
+        transform: none;
+        transition: none;
+        margin: 0;
+    }
+    .burger {
+        display: none !important;
+    }
 } 
